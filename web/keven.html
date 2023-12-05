@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            min-height: 100vh;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        h1,h2{
+            color: black;
+        }
+        h3{
+            color: black;
+        }
+        
+       .container{
+        position: absolute;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #f1f1f1;
+       }
+       .container .content{
+        position: relative;
+        margin-top: 10vh;
+        min-height: 90vh;
+       }
+       .container .content .cards{
+        padding: 20px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       }
+       .container .content .cards #card1{
+        width: 240px;
+        height: 150px;
+        background:red;
+        margin: 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+
+       }
+       .container .content .cards #card2{
+        width: 240px;
+        height: 150px;
+        background:red;
+        margin: 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+
+       }
+       .container .content .cards #card3{
+        width: 240px;
+        height: 150px;
+        background:red;
+        margin: 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+
+       }
+       .container .content .cards #card4{
+        width: 240px;
+        height: 150px;
+        background:red;
+        margin: 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+
+       }
+       .container .content .content-2{
+        min-height: 60vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+       }
+       .container .content .content-2 .recent-payments{
+        min-height: 50vh;
+        flex: 2;
+        background: white;
+        margin: 0 25px 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: column;
+    }
+       .container .content .content-2 .new-students{
+        flex: 2;
+        background: white;
+        min-height: 50vh;
+        margin: 0 25px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+       }
+       .container .content .content-2 .new-students .divH3{
+        padding: 40px 
+        
+       }
+       .container .content .content-2 .new-students .divH3.Humidade{
+        text-align: right;
+       }
+       .title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 10px;
+        border-bottom: 2px solid #999;
+
+       }
+       .table{
+        padding: 1px;
+       }
+       th,td{
+        text-align: left;
+        padding: 8px;
+
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="content">
+            <div class="cards">
+                <div id="card1">
+                    <div class="box">
+                        <h3>Produto1</h3>
+                    </div><!--fim de box-->
+                    <div class="icon-case"></div>
+                </div> <!--fim de card-->
+                <div id="card2">
+                    <div class="box">
+                        <h3 >Produto2</h3>
+                    </div><!--fim de box-->
+                    <div class="icon-case"></div>
+                </div> <!--fim de card-->
+                <div id="card3">
+                    <div class="box">
+                        <h3>Produto3</h3>
+                    </div><!--fim de box-->
+                    <div class="icon-case"></div>
+                </div> <!--fim de card-->
+                <div id="card4">
+                    <div class="box">
+                
+                        <h3>Produto4</h3>
+                    </div><!--fim de box-->
+                    <div class="icon-case"></div>
+                </div> <!--fim de card-->
+            </div><!--fim de cards-->
+            <div class="content-2">
+                <div class="recent-payments">
+                    <div class="title">
+                        <h2>Produtos</h2>
+                    </div>
+                   <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Estado</th>
+                        <th>Hora</th>
+                        
+                    </tr>
+                    <tr>
+                        <td>Produto1</td>
+                        <td id="prod1">removido</td>
+                        <td id="tempo">12:00</td>
+
+                    </tr>
+                    <tr>
+                        <td>Produto2</td>
+                        <td id="prod2">removido</td>
+                        <td>12:00</td>
+                    </tr>
+                    <tr>
+                        <td>Produto3</td>
+                        <td id="prod3">removido</td>
+                        <td>12:00</td>
+                    </tr>
+                    <tr>
+                        <td>Produto4</td>
+                        <td id="prod4">removido</td>
+                        <td>12:00</td>
+                    </tr>
+                    
+                   </table>
+                </div><!--fim de recent-payments-->
+                <div class="new-students">
+                    <div class="title">
+                        <h2>Sensor DHT11</h2>
+                    </div> <!--fim de title-->
+                    <div class="divH3">
+                        <h3>
+                            Temperature: <span style="color:rgb(216, 3, 3)" id="Tempvalue">00</span> C<br>
+                            Humidity&emsp;&emsp;: <span style="color:rgba(0, 0, 255, 0.795)" id="Humvalue">00</span> % 
+                        </h3>
+                        <h3>
+                            0 C &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 50 C
+                            <div id="dynRectangle1"></div><br>
+                            0 % &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 100%
+                            <div id="dynRectangle2"></div>  
+                        </h3>
+                </div>
+                </div>
+            </div><!--fim de content-2-->
+        </div><!--fim de content-->
+    </div><!--fim de container-->
+
+    <script>
+  InitWebSocket()
+  function InitWebSocket()
+  {
+    websock = new WebSocket('ws://'+window.location.hostname+':81/');
+    websock.onmessage=function(evt)
+    {
+      JSONobj = JSON.parse(evt.data);
+       cartao= JSONobj.CARD;
+       document.getElementById('Tempvalue').innerHTML = JSONobj.TEMP;
+       document.getElementById('cont').innerHTML = JSONobj.CARD;
+       var temp = parseInt(JSONobj.TEMP * 9.5);
+       document.getElementById("dynRectangle1").style.width = temp+"px";
+       document.getElementById('Humvalue').innerHTML = JSONobj.HUM;
+       var hum = parseInt(JSONobj.HUM * 4.8);
+       document.getElementById("dynRectangle2").style.width = hum+"px";
+
+       if(cartao=="card1"){
+      document.getElementById("card1").style.backgroundColor="green";
+      document.getElementById('prod1').innerHTML ="adicionado";
+    }
+
+     if(cartao=="card2"){
+      document.getElementById("card2").style.backgroundColor="green";
+      document.getElementById('prod2').innerHTML ="adicionado";
+    }
+     if(cartao=="card3"){
+      document.getElementById("card3").style.backgroundColor="green";
+      document.getElementById('prod3').innerHTML ="adicionado";
+    }
+     if(cartao=="card4"){
+      document.getElementById("card4").style.backgroundColor="green";
+      document.getElementById('prod4').innerHTML ="adicionado";
+    }
+
+        if(cartao=="NoCard1"){
+      document.getElementById("card1").style.backgroundColor="red";
+     document.getElementById('prod1').innerHTML ="removido";
+    }
+
+     if(cartao=="NoCard2"){
+      document.getElementById("card2").style.backgroundColor="red";
+     document.getElementById('prod2').innerHTML ="removido";
+    }
+     if(cartao=="NoCard3"){
+      document.getElementById("card3").style.backgroundColor="red";
+      document.getElementById('prod3').innerHTML ="removido";
+    }
+     if(cartao=="NoCard4"){
+      document.getElementById("card4").style.backgroundColor="red";
+     document.getElementById('prod4').innerHTML ="removido";
+    }
+    
+    }  
+   
+  }
+  function rangeSlide(value){
+          document.getElementById("rangeValue").innerHTML=value;
+        }
+
+     const hourEl=document.getElementById("tempo")
+     function updateClock(){
+        let h=new Date().getHours()
+        let m= new Date().getMinutes()
+        let s = new Date().getSeconds()
+        let horario;
+        let ampm ="AM"
+        h=h<10 ? "0" + h :h;
+        m=m<10 ? "0" + m :m;
+        s=s<10 ? "0" + s :s;
+        h=h+":"+m+":"+s;
+        m=m+":"
+        hourEl.innerText=h;
+        minuteEl.innerText=m;
+        secondEl.innerText=s;
+        ampmEl,(innerText=ampm);
+       
+        setTimeout(()=>{
+            updateClock()
+        },1000) 
+       
+     }
+     updateClock(); 
+</script>
+</body>
+</html>    
